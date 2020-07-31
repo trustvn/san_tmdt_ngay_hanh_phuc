@@ -1,0 +1,862 @@
+/*===========BEGIN: REVIEW=============*/
+.vnt-review{
+    margin-bottom: 20px;
+}
+.vnt-review *{
+    outline: none;
+}
+.vnt-review .title{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333333;
+}
+.vnt-review .reviewDashbroad{
+    background: #ffffff;
+    border:solid 1px rgba(0,0,0,0.1);
+    border-bottom: none;
+}
+.vnt-review .reviewDashbroad .grid{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: stretch;
+}
+.vnt-review .reviewDashbroad .grid .col{
+    width: 100%;
+    padding: 20px 30px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.vnt-review .reviewDashbroad .grid .col ~ .col{
+    border-left: solid 1px rgba(0,0,0,0.1);
+}
+.vnt-review .reviewDashbroad .dashbroadTitle{
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.vnt-review .reviewDashbroad .dashbroadPoint{
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+.vnt-review .reviewDashbroad .dashbroadRatting{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 30px;
+    color:#cccccc;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.vnt-review .reviewDashbroad .dashbroadRatting i{
+    margin: 0 3px;
+}
+.vnt-review .reviewDashbroad .dashbroadRatting i.rat{
+    color:#fccf1f;
+}
+.vnt-review .reviewDashbroad .dashbroadCount{
+    font-size: 13px;
+    line-height: 21px;
+    color: #999999;
+    text-align: center;
+}
+.vnt-review .reviewDashbroad .dashbroadPolling{
+    width: 100%;
+}
+.vnt-review .reviewDashbroad .dashbroadPolling .poll{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.vnt-review .reviewDashbroad .dashbroadPolling .poll:last-child{
+    margin-bottom: 0;
+}
+.vnt-review .reviewDashbroad .dashbroadPolling .poll .name{
+    width: 55px;
+    flex-shrink: 0;
+    padding-right: 10px;
+}
+.vnt-review .reviewDashbroad .dashbroadPolling .poll .num{
+    width: 30px;
+    flex-shrink: 0;
+    padding-left: 10px;
+    color: #999999;
+}
+.vnt-review .reviewDashbroad .dashbroadPolling .poll .percent{
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
+.vnt-review .reviewDashbroad .dashbroadPolling .poll .percent span{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #f57a1a;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.vnt-review .reviewDashbroad .dashbroadTxt{
+    color:#666666;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.vnt-review .reviewDashbroad .dashbroadToggle{
+    width: 100%;
+}
+.vnt-review .reviewDashbroad .dashbroadToggle a {
+    display: block;
+    background: #f57a1a;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    padding: 9px 10px;
+    text-align: center;
+}
+.vnt-review .reviewDashbroad .dashbroadToggle a:hover{
+    background: #333333;
+}
+.vnt-review .reviewToggle{
+    background: #ffffff;
+    border:solid 1px rgba(0,0,0,0.1);
+    border-bottom: none;
+    display: none;
+}
+.vnt-review .reviewToggle .grid{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 -15px;
+}
+.vnt-review .reviewToggle .grid .col1{
+    width:-webkit-calc(100% - 470px);
+    width:-moz-calc(100% - 470px);
+    width:-o-calc(100% - 470px);
+    width:calc(100% - 470px);
+    padding: 0 10px;
+}
+.vnt-review .reviewToggle .grid .col2{
+    width: 470px;
+    padding: 0 10px;
+}
+.vnt-review .reviewFormComment{
+    padding: 15px 20px;
+    padding-right: 0;
+}
+.vnt-review .reviewFormComment .formTitle{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.vnt-review .reviewFormComment .formGroup{
+    margin-bottom: 10px;
+}
+.vnt-review .reviewFormComment .formGroup.df{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-start;
+}
+.vnt-review .reviewFormComment label{
+    font-weight: normal;
+}
+.vnt-review .reviewFormComment .formGroup.df label{
+    margin-right: 20px;
+}
+.vnt-review .reviewFormComment input:not([type="checkbox"]):not([type="radio"]),
+.vnt-review .reviewFormComment textarea,
+.vnt-review .reviewFormComment select{
+    width: 100%;
+    height: 40px;
+    border:solid 1px rgba(0,0,0,0.1);
+    padding: 0 10px;
+    background-color: #ffffff;
+}
+.vnt-review .reviewFormComment textarea{
+    height: 90px;
+    padding: 10px;
+    resize: none;
+}
+.vnt-review .reviewFormComment .note{
+    color: #f57a1a;
+    font-size: 13px;
+    line-height: 21px;
+}
+.vnt-review .reviewFormComment button.btnUploadImage{
+    width: 100px;
+    height: 35px;
+    color: #f57a1a;
+    border-radius: 5px;
+    border: solid 1px #f57a1a;
+    background: transparent;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.vnt-review .reviewFormComment button.btnUploadImage:hover{
+    border-color: #333333;
+    color: #333333;
+}
+.vnt-review .reviewFormComment button.btnSubmitForm {
+    display: block;
+    background: #f57a1a;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    padding: 9px 10px;
+    text-align: center;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.vnt-review .reviewFormComment button.btnSubmitForm:hover{
+    background: #333333;
+}
+.vnt-review .reviewFormComment .rev-field ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.vnt-review .reviewFormComment .rev-field ul li{
+    margin-right: 5px;
+}
+.vnt-review .reviewFormComment .rev-field ul li:last-child{
+    margin-right: 0;
+}
+.vnt-review .reviewFormComment .rev-field ul li a{
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    line-height: 33px;
+    color: #cccccc;
+    position: relative;
+    display: block;
+}
+.vnt-review .reviewFormComment .rev-field ul li a:before{
+    content: "\f005";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.vnt-review .reviewFormComment .rev-field ul li a.active:before{
+    color:#fccf1f;
+}
+.vnt-review .reviewFormComment .rev-field ul li input{
+    display: none;
+}
+.vnt-review .reviewProduct{
+    padding: 15px 20px;
+    padding-left: 0;
+}
+.vnt-review .reviewProduct .img{
+    width: 170px;
+    height: 170px;
+    float: left;
+    position: relative;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.vnt-review .reviewProduct .wrap:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.vnt-review .reviewProduct .img img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    max-width: 150px;
+    max-height: 150px;
+}
+.vnt-review .reviewProduct .caption{
+    overflow: hidden;
+}
+.vnt-review .reviewProduct .tend{
+    margin-bottom: 5px;
+}
+.vnt-review .reviewProduct .tend h3{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+}
+.vnt-review .reviewProduct .df{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.vnt-review .reviewProduct .brand{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.vnt-review .reviewProduct .brand span{
+    color:#e0493e;
+    font-weight: normal;
+}
+.vnt-review .reviewProduct .ratting{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    color: #999999;
+    font-size: 13px;
+    line-height: 14px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: solid 1px rgba(0,0,0,0.1);
+}
+.vnt-review .reviewProduct .ratting i{
+    margin: 0 2px;
+}
+.vnt-review .reviewProduct .ratting i.rat{
+    color:#fccf1f;
+}
+.vnt-review .reviewProduct .num{
+    color: #999999;
+    font-size: 13px;
+    line-height: 14px;
+}
+.vnt-review .reviewProduct .note{
+    padding: 20px;
+    font-size: 13px;
+    line-height: 21px;
+    background: #f6f6f6;
+}
+.vnt-review .reviewProduct .note p{
+    padding: 0;
+}
+.vnt-review .reviewComment{
+    background: #ffffff;
+    padding: 20px 25px;
+    border: solid 1px rgba(0,0,0,0.1);
+}
+.vnt-review .reviewComment .toolsComment{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.vnt-review .reviewComment .toolsComment .txt{
+    color: #666666;
+    width: 180px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.vnt-review .reviewComment .toolsComment .tools{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.vnt-review .reviewComment .toolsComment .tools select{
+    margin-right: 10px;
+    border:solid 1px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    padding: 5px 10px;
+    padding-right: 25px;
+    background-color: #ffffff;
+}
+.vnt-review .reviewComment .nodeComment{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+.vnt-review .reviewComment .nodeComment .grid{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-start;
+}
+.vnt-review .reviewComment .nodeComment .grid .col1{
+    width: 180px;
+    flex-shrink: 0;
+}
+.vnt-review .reviewComment .nodeComment .avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.vnt-review .reviewComment .nodeComment .avatar img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    height: 100%;
+}
+.vnt-review .reviewComment .nodeComment .name{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.vnt-review .reviewComment .nodeComment .date{
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color:#999999;
+}
+.vnt-review .reviewComment .nodeComment .comtHead{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.vnt-review .reviewComment .nodeComment .comtRatting{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    color: #999999;
+    font-size: 13px;
+    line-height: 14px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: solid 1px rgba(0,0,0,0.1);
+}
+.vnt-review .reviewComment .nodeComment .comtRatting i{
+    margin: 0 2px;
+}
+.vnt-review .reviewComment .nodeComment .comtRatting i.rat{
+    color:#fccf1f;
+}
+.vnt-review .reviewComment .nodeComment .comtTitle{
+    font-weight: bold;
+}
+.vnt-review .reviewComment .nodeComment .comtBuy{
+    font-size: 13px;
+    line-height: 21px;
+    color:#6ab6d9;
+    margin-bottom: 2px;
+}
+.vnt-review .reviewComment .nodeComment .comtBuy span{
+    padding-left: 20px;
+    position: relative;
+    display: block;
+}
+.vnt-review .reviewComment .nodeComment .comtBuy span:before{
+    content: "\f772";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+.vnt-review .reviewComment .nodeComment .comtContent{
+    color:#666666;
+    margin-bottom: 5px;
+}
+.vnt-review .reviewComment .nodeComment .comtContent p{
+    padding: 0;
+    margin-bottom: 5px;
+}
+.vnt-review .reviewComment .nodeComment .comtContent .listImg{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.vnt-review .reviewComment .nodeComment .comtContent .listImg img{
+    width:auto;
+    height: 75px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.vnt-review .reviewComment .nodeComment .comtTools{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.vnt-review .reviewComment .nodeComment .comtTools .tool{
+    margin-right: 20px;
+}
+.vnt-review .reviewComment .nodeComment .comtTools .tool a{
+    display: block;
+    color: #666666;
+}
+.vnt-review .reviewComment .nodeComment .comtTools .tool a.like span{
+    padding-left: 20px;
+    position: relative;
+}
+.vnt-review .reviewComment .nodeComment .comtTools .tool a.like span:before{
+    content: "\f164";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left:0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 16px;
+    line-height: 24px;
+}
+.vnt-review .reviewComment .nodeComment .comtTools .tool a.like.active{
+    color:#2078f4;
+}
+.vnt-review .reviewComment .nodeComment .comtTools .tool a.like.active span:before{
+    -webkit-animation: like 1s linear;
+    -o-animation: like 1s linear;
+    animation: like 1s linear;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+@keyframes like{
+    0%{color:#666666;}
+    10%{transform:translateY(-50%) scale(0.8) rotate(15deg);}
+    20%{transform:translateY(-50%) scale(1.5) rotate(-15deg);}
+    40%{transform:translateY(-50%) scale(1.8) rotate(15deg);color:#2078f4;}
+    40%{transform:translateY(-50%) scale(1) rotate(0deg);}
+}
+.vnt-review .reviewComment .nodeCommentChild{
+    margin-top: 15px;
+}
+.vnt-review .reviewComment .nodeCommentChild .grid{
+    margin: 0 -5px;
+}
+.vnt-review .reviewComment .nodeCommentChild .grid .col1{
+    width: 60px;
+    flex-shrink: 0;
+    padding: 0 5px;
+}
+.vnt-review .reviewComment .nodeCommentChild .grid .col2{
+    width:-webkit-calc(100% - 60px);
+    width:-moz-calc(100% - 60px);
+    width:-o-calc(100% - 60px);
+    width:calc(100% - 60px);
+    padding: 0 5px;
+}
+.vnt-review .reviewComment .nodeCommentChild .avatar{
+    width: 50px;
+    height: 50px;
+}
+.vnt-review .reviewPagination{
+    text-align: right;
+}
+.vnt-review .reviewPagination .pagination ul li span.pagecur,
+.vnt-review .reviewPagination .pagination ul li a{
+    border:none;
+    background: #f3f3f3;
+    border:solid 1px rgba(0,0,0,0.15);
+}
+.vnt-review .reviewPagination .pagination ul li a:hover,
+.vnt-review .reviewPagination .pagination ul li span.pagecur{
+    background: #f57a1a;
+    border-color: #f57a1a;
+    color:#ffffff;
+}
+/*===============================*/
+.vnt-review.darkmode .reviewDashbroad,
+.vnt-review.darkmode .reviewToggle,
+.vnt-review.darkmode .reviewComment,
+.vnt-review.darkmode .reviewComment .toolsComment .tools select,
+.vnt-review.darkmode .reviewPagination .pagination ul li span.pagecur,
+.vnt-review.darkmode .reviewPagination .pagination ul li a,
+.vnt-review.darkmode .reviewFormComment input:not([type="checkbox"]):not([type="radio"]),
+.vnt-review.darkmode .reviewFormComment textarea,
+.vnt-review.darkmode .reviewFormComment select,
+.vnt-review.darkmode .reviewProduct .note{
+    background: rgba(255, 255, 255, 0.1);
+}
+.vnt-review.darkmode .reviewDashbroad,
+.vnt-review.darkmode .reviewToggle,
+.vnt-review.darkmode .reviewComment,
+.vnt-review.darkmode .reviewComment .toolsComment .tools select,
+.vnt-review.darkmode .reviewDashbroad .grid .col ~ .col,
+.vnt-review.darkmode .reviewPagination .pagination ul li span.pagecur,
+.vnt-review.darkmode .reviewPagination .pagination ul li a,
+.vnt-review.darkmode .reviewFormComment input:not([type="checkbox"]):not([type="radio"]),
+.vnt-review.darkmode .reviewFormComment textarea,
+.vnt-review.darkmode .reviewFormComment select,
+.vnt-review.darkmode .reviewProduct .note,
+.vnt-review.darkmode .reviewComment .nodeComment,
+.vnt-review.darkmode .reviewFormComment button.btnUploadImage:hover{
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.vnt-review.darkmode .title,
+.vnt-review.darkmode .reviewDashbroad,
+.vnt-review.darkmode .reviewToggle,
+.vnt-review.darkmode .reviewComment,
+.vnt-review.darkmode .reviewDashbroad .dashbroadTxt,
+.vnt-review.darkmode .reviewComment .toolsComment .txt,
+.vnt-review.darkmode .reviewPagination .pagination ul li span.pagecur,
+.vnt-review.darkmode .reviewPagination .pagination ul li a,
+.vnt-review.darkmode .reviewFormComment input:not([type="checkbox"]):not([type="radio"]),
+.vnt-review.darkmode .reviewFormComment textarea,
+.vnt-review.darkmode .reviewFormComment select,
+.vnt-review.darkmode .reviewProduct .note,
+.vnt-review.darkmode .reviewComment .nodeComment .comtContent,
+.vnt-review.darkmode .reviewDashbroad .dashbroadPolling .poll .num{
+    color: #cccccc;
+}
+.vnt-review.darkmode .reviewPagination .pagination ul li a:hover,
+.vnt-review.darkmode .reviewPagination .pagination ul li span.pagecur{
+    background: #ffffff;
+}
+.vnt-review.darkmode .reviewPagination .pagination ul li a:hover,
+.vnt-review.darkmode .reviewPagination .pagination ul li span.pagecur,
+.vnt-review.darkmode .reviewFormComment button.btnUploadImage:hover,
+.vnt-review .reviewComment .nodeComment .comtTools .tool a{
+    color: #999999;
+}
+/*===============================*/
+@media all and (max-width: 991px){
+.vnt-review .reviewDashbroad .grid{
+    flex-wrap: wrap;
+}
+.vnt-review .reviewDashbroad .grid .col{
+    padding: 10px 15px;
+}
+.vnt-review .reviewDashbroad .grid .col:nth-child(1){
+    width: 150px;
+    flex-shrink: 0;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+.vnt-review .reviewDashbroad .grid .col:nth-child(2){
+    width:-webkit-calc(100% - 150px);
+    width:-moz-calc(100% - 150px);
+    width:-o-calc(100% - 150px);
+    width:calc(100% - 150px);
+    flex-shrink: 0;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+.vnt-review .reviewDashbroad .grid .col:nth-child(3){
+    border-left: none
+}
+.vnt-review .reviewDashbroad .dashbroadTitle{
+    font-size: 13px;
+    line-height: 21px;
+}
+.vnt-review .reviewDashbroad .dashbroadPoint{
+    font-size: 25px;
+    line-height: 33px;
+}
+.vnt-review .reviewDashbroad .dashbroadRatting{
+    font-size: 14px;
+    line-height: 22px;
+}
+.vnt-review .reviewComment{
+    padding: 10px 15px;
+}
+.vnt-review .reviewToggle .grid{
+    display: block;
+}
+.vnt-review .reviewToggle .grid .col1,
+.vnt-review .reviewToggle .grid .col2{
+    width: 100%;
+}
+.vnt-review .reviewFormComment,
+.vnt-review .reviewProduct{
+    padding: 10px 20px;
+}
+.vnt-review .reviewProduct .tend h3{
+    font-size: 16px;
+    line-height: 24px;
+}
+}
+@media all and (max-width: 767px){
+.vnt-review .reviewDashbroad .grid .col:nth-child(1){
+    width: 120px;
+}
+.vnt-review .reviewDashbroad .grid .col:nth-child(2){
+    width:-webkit-calc(100% - 120px);
+    width:-moz-calc(100% - 120px);
+    width:-o-calc(100% - 120px);
+    width:calc(100% - 120px);
+}
+.vnt-review .reviewDashbroad .dashbroadPolling .poll .name{
+    width: 45px;
+    padding-right: 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.vnt-review .reviewDashbroad .dashbroadPolling .poll .num{
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+.vnt-review .reviewComment .toolsComment{
+    display: block;
+}
+.vnt-review .reviewComment .toolsComment .txt{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.vnt-review .reviewComment .toolsComment .tools select{
+    font-size: 12px;
+    line-height: 20px;
+    background-color: #ffffff;
+}
+.vnt-review .reviewComment .nodeComment .grid{
+    display: block;
+}
+.vnt-review .reviewComment .nodeComment .grid .col1,
+.vnt-review .reviewComment .nodeComment .grid .col2{
+    width: 100%;
+}
+.vnt-review .reviewComment .nodeComment .grid .col1{
+    padding-left: 60px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.vnt-review .reviewComment .nodeComment .avatar{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left:0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.vnt-review .reviewComment .nodeComment .name,
+.vnt-review .reviewComment .nodeComment .date{
+    text-align: left;
+}
+.vnt-review .reviewComment .nodeCommentChild{
+    padding-left: 40px;
+    position: relative;
+}
+.vnt-review .reviewComment .nodeCommentChild .grid .col1{
+    position: initial;
+}
+.vnt-review .reviewComment .nodeCommentChild .avatar{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: initial;
+    -ms-transform: initial;
+    -o-transform: initial;
+    transform: initial;
+}
+}
+@media all and (max-width: 520px){
+.vnt-review .reviewComment .toolsComment .tools{
+    display: block;
+}
+.vnt-review .reviewComment .toolsComment .tools select{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.vnt-review .reviewComment .nodeComment .comtHead{
+    display: block;
+}
+.vnt-review .reviewComment .nodeComment .comtRatting{
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+    margin-bottom: 5px;
+}
+.vnt-review .reviewProduct .wrap{
+    margin-bottom: 10px;
+}
+.vnt-review .reviewProduct .img{
+    width: 100px;
+    height: 100px;
+}
+.vnt-review .reviewProduct .img img{
+    max-width: 70px;
+    max-height: 70px;
+}
+.vnt-review .reviewProduct .tend h3{
+    font-size: 14px;
+    line-height: 22px;
+}
+.vnt-review .reviewProduct .df{
+    display: block;
+}
+.vnt-review .reviewProduct .ratting{
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+    margin-bottom: 5px;
+}
+} 
+@media all and (max-width: 360px){
+.vnt-review .reviewDashbroad .grid .col:nth-child(1),
+.vnt-review .reviewDashbroad .grid .col:nth-child(2){
+    width: 100%;
+}
+.vnt-review .reviewProduct .img{
+    max-width: 60px;
+    max-height: 60px;
+}
+.vnt-review .reviewProduct .img img{
+    max-width: 40px;
+    max-height: 40px;
+}
+}
+/*===========END: REVIEW=============*/
